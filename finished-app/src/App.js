@@ -4,6 +4,7 @@ import {Home} from "./pages/Home";
 import {ExplainUseState} from "./pages/ExplainUseState";
 import {ExplainUseEffect} from "./pages/ExplainUseEffect";
 import {ExplainComponents} from "./pages/ExplainComponents";
+import {ExplainProps} from "./pages/ExplainProps";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path={"/explain-use-state"} element={<ExplainUseState/>}/>
           <Route path={"/explain-use-effect"} element={<ExplainUseEffect/>}/>
           <Route path={"/explain-components"} element={<ExplainComponents/>}/>
+          <Route path={"/explain-props"} element={<ExplainProps/>}/>
         </Routes>
       </BrowserRouter>
     </>
