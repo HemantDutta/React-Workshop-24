@@ -1,13 +1,175 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-color: #ffffff;
+    --vib-1: #7df9ff;
+    --vib-2: #2fff2f;
+    --vib-3: #ff00f5;
+    --vib-4: #3300ff;
+    --vib-5: #ffff00;
+    --vib-6: #ff4911;
+    --vin-1: #DAF5F0;
+    --vin-2: #A7DBD8;
+    --vin-3: #87CEEB;
+    --vin-4: #69D2E7;
+    --vin-5: #B5D2AD;
+    --vin-6: #BAFCA2;
+    --vin-7: #90EE90;
+    --vin-8: #7FBCBC;
+    --vin-9: #FDFD96;
+    --vin-10: #FFDB58;
+    --vin-11: #F4D73B;
+    --vin-12: #E3A018;
+    --vin-13: #F8D6B3;
+    --vin-14: #FFA07A;
+    --vin-15: #FF7A5C;
+    --vin-16: #FF6B6B;
+    --vin-17: #FCDFFF;
+    --vin-18: #FFC0CB;
+    --vin-19: #FFB2EF;
+    --vin-20: #FF69B4;
+    --vin-21: #E3DFF2;
+    --vin-22: #C4A1FF;
+    --vin-23: #A388EE;
+    --vin-24: #9723C9;
+    --text-light: #94949d;
+    --bg-dark: #2d2d2d
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-shadow-light {
+    text-shadow: 4px 6px #000000;
 }
+
+.text-shadow-mid {
+    text-shadow: 6px 8px #000000;
+}
+
+.text-shadow-dark {
+    text-shadow: 8px 10px #000000;
+}
+
+.shadow-light {
+    box-shadow: 4px 6px #000000;
+}
+
+.shadow-mid {
+    box-shadow: 6px 8px #000000;
+}
+
+.shadow-dark {
+    box-shadow: 8px 10px #000000;
+}
+
+.border-light {
+    border: 2px solid #000000;
+}
+
+.border-mid {
+    border: 4px solid #000000;
+}
+
+.border-dark {
+    border: 6px solid #000000;
+}
+
+.border-white-light {
+    border: 2px solid #ffffff;
+}
+
+.border-white-mid {
+    border: 4px solid #ffffff;
+}
+
+.border-white-dark {
+    border: 6px solid #ffffff;
+}
+
+.shadow-white-light {
+    box-shadow: 4px 6px var(--bg-color);
+}
+
+.shadow-white-mid {
+    box-shadow: 6px 8px var(--bg-color);
+}
+
+.shadow-white-dark {
+    box-shadow: 8px 10px var(--bg-color);
+}
+
+.border-white-light {
+    border: 2px solid var(--bg-color);
+}
+
+.border-white-mid {
+    border: 4px solid var(--bg-color);
+}
+
+.border-white-dark {
+    border: 6px solid var(--bg-color);
+}
+
+.img-shadow-white-light {
+    box-shadow: 4px 6px var(--bg-color);
+}
+
+.img-shadow-white-mid {
+    box-shadow: 6px 8px var(--bg-color);
+}
+
+.img-shadow-white-dark {
+    box-shadow: 8px 10px var(--bg-color);
+}
+
+.img-shadow-light {
+    filter: drop-shadow(4px 6px #000000);
+}
+
+.img-shadow-mid {
+    filter: drop-shadow(6px 8px #000000);
+}
+
+.img-shadow-dark {
+    filter: drop-shadow(8px 10px #000000);
+}
+
+.bubble-top-left {
+    border-radius: 0 20px 20px 20px;
+}
+
+.bubble-top-right {
+    border-radius: 20px 0 20px 20px;
+}
+
+.bubble-bottom-right {
+    border-radius: 20px 20px 0 20px;
+}
+
+.bubble-bottom-left {
+    border-radius: 20px 20px 20px 0;
+}
+
+.dot-border-bottom {
+    border-bottom: 2px dotted #ffffff;
+}
+
+/* ===== Home Page Styles =====*/
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--vin-15);
+}
+
+/* ===== Home Page Styles End =====*/
+
+/* ===== ExplainUseState Styles =====*/
+
+.explain-use-state {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--vin-18);
+}
+
+/* ===== ExplainUseState Styles End =====*/
