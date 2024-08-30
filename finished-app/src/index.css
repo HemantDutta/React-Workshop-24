@@ -167,7 +167,7 @@
 /* ===== ExplainUseState Styles =====*/
 
 .explain-use-state {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: var(--vin-18);
 }
@@ -180,6 +180,16 @@
     min-height: 100vh;
     width: 100vw;
     background-color: var(--vin-22);
+}
+
+/* ===== ExplainUseEffect Styles End =====*/
+
+/* ===== ExplainUseEffect Styles =====*/
+
+.explain-components {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--vin-13);
 }
 
 /* ===== ExplainUseEffect Styles End =====*/

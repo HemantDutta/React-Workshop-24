@@ -32,7 +32,7 @@ export const ExplainUseEffect = () => {
             <div className="explain-use-effect flex flex-col">
                 <div className="header text-center pt-10 flex flex-col gap-9 items-center">
                     <span className="text-xl md:text-5xl font-semibold shadow-white-dark p-4 border-white-light bg-black text-white"><i className="fa-brands fa-react"></i> React WorkShop '24</span>
-                    <span className="text-4xl font-semibold p-4 bg-purple-700 text-white border-white-light shadow-white-light">useEffect()</span>
+                    <span className="text-xl md:text-4xl font-semibold p-4 bg-purple-700 text-white border-white-light shadow-white-light">useEffect()</span>
                 </div>
                 <div className="content flex-grow flex items-center justify-evenly gap-5 flex-wrap">
                     <div className="state-counter bg-[#90EE90] p-5 rounded border-light shadow-light flex flex-col gap-5">
