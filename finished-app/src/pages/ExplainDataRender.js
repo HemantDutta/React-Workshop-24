@@ -1,15 +1,31 @@
-import {useState} from "react";
-import {UpdateCounter} from "../components/UpdateCounter";
+import {useEffect, useState} from "react";
+import axios from "axios";
 
-export const ExplainProps = () => {
+export const ExplainDataRender = () => {
 
     //states
-    const [counter, setCounter] = useState(0);
+    const [loading, setLoading] = useState(false);
+    const [data, setData] = useState([]);
 
-    //Increment Counter
-    function incrementCounter() {
-        setCounter(prevState => prevState + 1);
+    //Fetch Users
+    async function fetchUsers() {
+        try {
+            setLoading(true);
+            let response = await axios.get("http://localhost:5000/get-users");
+            setTimeout(()=>{
+                setData(response.data);
+            }, 2000)
+            setLoading(false);
+        }
+        catch (e) {
+            console.log(e);
+        }
     }
+
+    //useEffect
+    useEffect(()=>{
+        fetchUsers();
+    },[])
 
     return (
         <>
@@ -18,8 +34,22 @@ export const ExplainProps = () => {
                     <span className="text-xl md:text-5xl font-semibold shadow-white-dark p-4 border-white-light bg-black text-white"><i className="fa-brands fa-react"></i> React WorkShop '24</span>
                     <span className="text-xl md:text-4xl font-semibold p-4 bg-blue-500 text-white border-white-light shadow-white-light">Data Render</span>
                 </div>
-                <div className="content flex-grow flex items-center justify-evenly gap-5 flex-wrap">
-
+                <div className="content flex-grow grid place-items-center">
+                    <div className="list-container p-5 bg-white border-light shadow-light flex flex-col gap-4 w-[80vw]">
+                        {
+                            !loading && data.length !== 0 ? (
+                                data.map((user,index) => {
+                                    return (
+                                        <div key={index} className="flex items-center gap-2 justify-between">
+                                            <span>{user.name}</span>
+                                            <span>{user.email}</span>
+                                            <span>{user.birthdate}</span>
+                                        </div>
+                                    )
+                                })
+                            ) : <span className="text-xl">Loading...</span>
+                        }
+                    </div>
                 </div>
             </div>
         </>

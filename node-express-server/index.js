@@ -40,6 +40,25 @@ app.post("/log-in", async (req, res) => {
     }
 });
 
+//Dummy Data
+const users = [
+    { name: "Alice", email: "alice@example.com", birthdate: "01/02/1990" },
+    { name: "Bob", email: "bob@example.com", birthdate: "03/04/1995" },
+    { name: "Charlie", email: "charlie@example.com", birthdate: "05/06/2000" },
+    { name: "David", email: "david@example.com", birthdate: "07/08/1985" },
+    { name: "Eve", email: "eve@example.com", birthdate: "09/10/1998" },
+    { name: "Frank", email: "frank@example.com", birthdate: "11/12/1975" },
+    { name: "Grace", email: "grace@example.com", birthdate: "13/14/2002" },
+    { name: "Harry", email: "harry@example.com", birthdate: "15/16/1993" },
+    { name: "Ivy", email: "ivy@example.com", birthdate: "17/18/1980" },
+    { name: "Jack", email: "jack@example.com", birthdate: "19/20/1997" }
+];
+
+//Fetch users
+app.get("/get-users", async (req, res) => {
+    res.send(users);
+});
+
 //Server Listener
 app.listen(port, () => {
     console.log("The server is listening on http://localhost:" + port);
