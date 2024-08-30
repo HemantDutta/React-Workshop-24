@@ -173,3 +173,13 @@
 }
 
 /* ===== ExplainUseState Styles End =====*/
+
+/* ===== ExplainUseEffect Styles =====*/
+
+.explain-use-effect {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--vin-22);
+}
+
+/* ===== ExplainUseEffect Styles End =====*/
