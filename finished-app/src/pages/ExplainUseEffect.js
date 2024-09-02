@@ -15,8 +15,10 @@ export const ExplainUseEffect = () => {
     //useEffect
     //on Load
     useEffect(()=>{
-        let logsStart = [<span className="py-2 px-4 border-light text-lg bg-white">Logs Started</span>]
-        setLogs(logsStart);
+        setTimeout(()=>{
+            let logsStart = [<span className="py-2 px-4 border-light text-lg bg-white">Logs Started</span>]
+            setLogs(logsStart);
+        }, 4000)
     },[])
 
     //State Update
