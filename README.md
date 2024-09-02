@@ -4,10 +4,10 @@ Welcome to the React Workshop repository! This repository contains all the resou
 
 ## Contents
 
-- [Starter React App](#starter-react-app)
-- [Finished React App](#finished-react-app)
-- [Node Express Server](#node-express-server)
-- [Workshop Presentation](#workshop-presentation)
+- [Starter React App](https://github.com/HemantDutta/React-Workshop-24/tree/main/starter-app)
+- [Finished React App](https://github.com/HemantDutta/React-Workshop-24/tree/main/finished-app)
+- [Node Express Server](https://github.com/HemantDutta/React-Workshop-24/tree/main/node-express-server)
+- [Workshop Presentation](https://github.com/HemantDutta/React-Workshop-24/blob/main/React_Workshop_24.pptx)
 
 ---
 
