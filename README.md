@@ -2,6 +2,10 @@
 
 Welcome to the React Workshop repository! This repository contains all the resources and code samples used during the React workshop conducted at Christ University, Bangalore.
 
+![Home Page](https://github.com/HemantDutta/React-Workshop-24/blob/31c7d29a76de409a7523e546a348540a0e433eaa/git_static/ss_1.png)
+![Data Render](https://github.com/HemantDutta/React-Workshop-24/blob/31c7d29a76de409a7523e546a348540a0e433eaa/git_static/ss_2.png)
+![useState](https://github.com/HemantDutta/React-Workshop-24/blob/31c7d29a76de409a7523e546a348540a0e433eaa/git_static/ss_3.png)
+
 ## Contents
 
 - [Starter React App](https://github.com/HemantDutta/React-Workshop-24/tree/main/starter-app)
